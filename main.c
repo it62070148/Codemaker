@@ -1,7 +1,6 @@
 #include "stdio.h"
 #include "string.h"
-#include "ctype.h"
-
+#include "ctype.h"/**/
 char user[20];
 char pass[20];
 
