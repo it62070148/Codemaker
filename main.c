@@ -2,23 +2,68 @@
 #include "string.h"
 #include "ctype.h"
 
-/* Menu*/
+
+char user[20];
+char pass[20];
+
+struct data{
+    char username[20];
+    char pass[20];
+}dat[30];
+int checktaken(char user[20], char key[5]){
+    FILE *gdata = fopen("Signup.txt", "r");
+    int c, ind = 0, ansuser = 1, po = 2,  count=0;
+    char data[20];
+    char blank[20] = "";
+    while ((fgets(data, 20, gdata)) != NULL)
+    {
+        if (po%2 == 0){
+            strcpy(dat[ind].username, data);
+            po++;
+        }
+        else{
+            strcpy(dat[ind].pass, data);
+            ind++;
+            po++;
+        }
+        count++;
+    }
+    if (key == "user"){
+    for(int i =0;i<= count;i++){
+        ansuser = strcmp(user, dat[i].username)+10;
+        if (ansuser == 0){
+            break;
+            }
+        }
+    }
+    if(key == "pass"){
+        for(int i =0;i<= count;i++){
+        ansuser = strcmp(user, dat[i].pass)+10;
+        if (ansuser == 0){
+            break;
+            }
+        }
+    }
+    return ansuser;
+}
 void menu(){
     printf("1 login\n2 sign up\n3 exit\n");
 }
-/* While Username and password is correct */
-int login(char user[20], char pass[20]);
-/**/
-int usertaken(char check[60][20], int count, char user[20], char checktype[3]);
-/* Get data from database */
-int getDataUser(char user[20], char check[3]);
-/**/
-/*Main function*/
+int login();
+void signup(){
+        FILE *signData = fopen("Signup.txt", "a");
+        printf("Input Username: \n");
+        scanf("%s", user);
+        printf("Input password: \n");
+        scanf("%s", pass);
+        fprintf(signData, "%s\n", user);
+        fprintf(signData, "%s\n", pass);
+        fclose(signData);
+        login();
+}
 int main()
 {
-    FILE *userDa = fopen("Signup.db", "a");
-    char user[20];
-    char pass[20];
+    FILE *userDa = fopen("Signup.txt", "r");
     int choice;
     menu();
     scanf("%d", &choice);
@@ -26,28 +71,11 @@ int main()
     {
         
          if(choice == 1){
-             do{
-            printf("Username: ");
-            scanf("%s", user);
-            printf("\nPassword: ");
-            scanf("%s", pass);
-         
-         }while(getDataUser(user, "lo") != 0 && getDataUser(pass, "lo") != 0);
-            login(user, pass);
+             login();
          }
-    
         else if(choice == 2)
         {
-            do{
-                printf("Input Username: \n");
-                scanf("%s", user);
-                }while (getDataUser(user, "si") == 0);
-                printf("Input password: \n");
-                scanf("%s", pass);
-                fprintf(userDa, "%s?", user);
-                fprintf(userDa, "%s\n", pass);
-                main();
-            
+               signup();
         }
         else{
             printf("Programs is closing");
@@ -61,45 +89,13 @@ int main()
     
     fclose(userDa);
 }
-int login(char user[20], char pass[20]){
-    printf("Success");
-    main();
-}
-int getDataUser(char user[20], char check[3]){
-    FILE *gdata = fopen("Signup.db", "r");
-    int c, ind = 0, ans = 1, po = 0,  count=0;
-    char data[20];
-    char lis[60][20];
-    char blank[20] = "";
-    while ((c = fgetc(gdata)) != EOF)
-    {
-        if (c == 63){
-            strcpy(lis[po], data);
-            strcpy(data, blank);
-            ind = 0;
-            po++;
-            count++;
-        }
-        else{
-            data[ind] = c;
-            ind++;
-        }
-    }
-    ans = usertaken(lis, count, user, check);
-    
-    return ans;
-}
-int usertaken(char lis[60][20], int count, char user[20], char check[3]){
-    int ans;
-    for(int i = 0;i < count;i++){
-        ans = strcmp(lis[i], user);
-        if (ans == 0 && check == "si"){
-            printf("Please try agian\nThis username is already taken.\n");
-            break;
-        }
-        else{
-            break;
-        }
-    }
-    return ans;
+int login(){
+
+    do{
+            printf("Username: ");
+            scanf("%s", user);
+            printf("Password: ");
+            scanf("%s", pass);
+         }while(checktaken(user, "user") != 0 && checktaken(pass, "pass") != 0);
+         printf("end");
 }
