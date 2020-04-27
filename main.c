@@ -2,13 +2,19 @@
 #include "string.h"
 #include "ctype.h"
 
+char user[20];
+char pass[20];
+
 struct data{
     char username[20];
     char pass[20];
 }dat[30];
 int checkpunct(char user[20]);
-char user[20];
-char pass[20];
+void encrypt();
+void decoder();
+void chosseoption();
+void  charcircle();
+void encryptmatrix();
 int checktaken(char user[20], char key[5]);
 int login();
 void signup();
@@ -51,7 +57,7 @@ int login(){
                 break;
             }
          }
-         //chosseoption();
+         chosseoption();
 }
 void signup(){
         FILE *signData = fopen("Signup.txt", "a");
@@ -118,4 +124,31 @@ int checkpunct(char user[20]){
         }
     }
     return n;
+}
+void chosseoption(){
+    printf("please input option\n");
+    printf("1 Encrypt\n2 decode\n3 main menu\n");
+    int n;
+    scanf("%d", &n);
+    if (n == 1){
+        encrypt();
+    }
+    else if (n == 2){
+        decoder();
+    }
+    else if (n == 3){
+        main();
+    }
+}
+void encrypt(){
+    int n;
+    printf("1 charcircle 2. matrix");
+    printf("please select type of encrypt\n");
+    scanf("%d", &n);
+    if (n == 1){
+        charcircle();
+    }
+    else if(n == 2){
+        encryptmatrix();
+    }
 }
