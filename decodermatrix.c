@@ -20,11 +20,6 @@ int main(){
         scanf("%f", &a[i][j]);
         }
     }
-  for (i = 0;i < k; i++){
-    for (j = 0;j < k; j++){
-      printf("%f ", a[i][j]);
-      }
-    }
   // printf("%ld\n", strlen(code));
   for (i = 0;i < strlen(code);i++){
     c = code[i];
@@ -145,7 +140,7 @@ void transpose(float num[3][3], float fac[3][3], float r, int massint[100], int 
     skip += 3;
   } 
   for(i = 0;i< a;++i){
-    c = ans[i];
+    c = round(ans[i]);
     printf("%c", c);
   }
    
