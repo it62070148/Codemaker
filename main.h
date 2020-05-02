@@ -1,0 +1,2 @@
+int finddecode();
+int encrypt();
