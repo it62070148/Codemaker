@@ -2,7 +2,8 @@
 #include "string.h"
 #include "math.h"
 #include "ctype.h"
-int main(){
+int encrypt();
+int encrypt(){
   char massage[100], cha;
   int c, matrix[3][3], count = 0, ind = 0, code[3][3]
   , len;

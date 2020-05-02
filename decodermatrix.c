@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<math.h>
 #include <string.h>
-
+int finddecode();
 int transintmirror(char c, int ind);
 int transint(int sum, int ind);
 float determinant(float [][3], float);
 void cofactor(float [][3], float, int [], int);
 void transpose(float [][3], float [][3], float, int [], int);
-int main(){
+int finddecode(){
   float a[3][3], d, k = 3;
   char code[100], c, word[100];
   int i, j, sum = 0, ind = 0, massint[100], l = 0, inverse[3][3]

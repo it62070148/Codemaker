@@ -1,6 +1,7 @@
 #include "stdio.h"
 #include "string.h"
 #include "ctype.h"/**/
+#include "main.h"
 char user[20];
 char pass[20];
 
@@ -9,11 +10,7 @@ struct data{
     char pass[20];
 }dat[30];
 int checkpunct(char user[20]);
-void encrypt();
-void decoder();
 void chosseoption();
-void  charcircle();
-void encryptmatrix();
 int checktaken(char user[20], char key[5]);
 int login();
 void signup();
@@ -130,24 +127,12 @@ void chosseoption(){
     int n;
     scanf("%d", &n);
     if (n == 1){
-        encrypt();
+        int finddecode();
     }
     else if (n == 2){
-        decoder();
+        int encrypt();
     }
     else if (n == 3){
         main();
-    }
-}
-void encrypt(){
-    int n;
-    printf("1 charcircle 2. matrix");
-    printf("please select type of encrypt\n");
-    scanf("%d", &n);
-    if (n == 1){
-        charcircle();
-    }
-    else if(n == 2){
-        encryptmatrix();
     }
 }
