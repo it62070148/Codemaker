@@ -10,6 +10,7 @@ int input_num_rotate();
 int is_num(char num[]);
 
 int main(void) {
+  //Transcode By Code_cycle
   char code_cycle[27] = {'a', 'b', 'c', 'd', 'e',
                          'f', 'g', 'h', 'i', 'j',
                          'k', 'l', 'm', 'n', 'o',
