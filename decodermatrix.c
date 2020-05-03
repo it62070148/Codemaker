@@ -1,18 +1,12 @@
-#include<stdio.h>
-#include<math.h>
-#include <string.h>
-int finddecode();
-int transintmirror(char c, int ind);
-int transint(int sum, int ind);
-float determinant(float [][3], float);
-void cofactor(float [][3], float, int [], int);
-void transpose(float [][3], float [][3], float, int [], int);
-int finddecode(){
+#include "main.h"
+
+
+void findcode(){
   float a[3][3], d, k = 3;
   char code[100], c, word[100];
-  int i, j, sum = 0, ind = 0, massint[100], l = 0, inverse[3][3]
-  ;
-  scanf("%[^\n]", code);
+  int i, j, sum = 0, ind = 0, massint[100], l = 0, inverse[3][3];
+  printf("Please input matrixcode\n");
+  scanf(" %[^\n]s", code);
   strcat(code, " ");
   printf("Enter the elements of %.0fX%.0f Matrix : \n", k, k);
   for (i = 0;i < k; i++){

@@ -1,36 +1,31 @@
-#include "stdio.h"
-#include "string.h"
-#include "ctype.h"/**/
 #include "main.h"
+
 char user[20];
 char pass[20];
-
+char massage[100];
 struct data{
     char username[20];
     char pass[20];
 }dat[30];
-int checkpunct(char user[20]);
-void chosseoption();
-int checktaken(char user[20], char key[5]);
-int login();
-void signup();
 int main()
 {
     FILE *userDa = fopen("Signup.txt", "r");
     int choice;
-    printf("1 login\n2 sign up\n3 exit\n");
+    home();
     scanf("%d", &choice);
     if (userDa != NULL)
     {
         
          if(choice == 1){
+            //  intersignup();
              login();
          }
         else if(choice == 2)
         {
+            //    void intersignupbe();
                signup();
         }
-        else{
+        else if(choice == 3){
             printf("Programs is closing");
         }
     
@@ -43,7 +38,7 @@ int main()
     fclose(userDa);
 }
 int login(){
-
+            home();
         while(1){
             printf("Username: ");
             scanf("%s", user);
@@ -57,6 +52,7 @@ int login(){
 }
 void signup(){
         FILE *signData = fopen("Signup.txt", "a");
+        intersignupbe();
         while(1){
         printf("Input Username: \n");
         scanf("%s", user);
@@ -69,6 +65,7 @@ void signup(){
         fprintf(signData, "%s\n", user);
         fprintf(signData, "%s\n", pass);
         fclose(signData);
+        intersignup();
         login();
 }
 int checktaken(char user[20], char key[5]){
@@ -122,15 +119,14 @@ int checkpunct(char user[20]){
     return n;
 }
 void chosseoption(){
-    printf("please input option\n");
-    printf("1 Encrypt\n2 decode\n3 main menu\n");
+    printf("test");
     int n;
     scanf("%d", &n);
     if (n == 1){
-        int finddecode();
+        findcode();
     }
     else if (n == 2){
-        int encrypt();
+        encrypt();
     }
     else if (n == 3){
         main();
