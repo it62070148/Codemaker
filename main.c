@@ -3,10 +3,7 @@
 char user[20];
 char pass[20];
 char massage[100];
-struct data{
-    char username[20];
-    char pass[20];
-}dat[30];
+
 int main()
 {
     FILE *userDa = fopen("Signup.txt", "r");
@@ -47,6 +44,8 @@ int login(){
             if(checktaken(user, "user") == 0 && checktaken(pass, "pass") == 0){
                 break;
             }
+            home();
+            printf("Invalid Username or password Please try agaian\n");
          }
          chosseoption(user);
 }
@@ -59,6 +58,8 @@ void signup(){
         if (checktaken(user, "user") != 0 && checkpunct(user) != 0){
             break;
         }
+        intersignupbe();
+        printf("Please create username witout punct\n");
         }
         printf("Input password: \n");
         scanf("%s", pass);
