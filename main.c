@@ -11,16 +11,18 @@ int main()
 {
     FILE *userDa = fopen("Signup.txt", "r");
     int choice;
-    printf("1 login\n2 sign up\n3 exit\n");
+    home();
     scanf("%d", &choice);
     if (userDa != NULL)
     {
         
          if(choice == 1){
+             intersignup();
              login();
          }
         else if(choice == 2)
         {
+               intersignup();
                signup();
         }
         else{
