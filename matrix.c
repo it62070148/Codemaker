@@ -5,7 +5,7 @@ void encrypt(){
   int c, matrix[3][3], count = 0, ind = 0, code[3][3]
   , len;
   printf("Please input massage\n");
-  scanf("%[^\n]s", massage);
+  scanf("% [^\n]s", massage);
   printf("input code\n");
   len = strlen(massage);
   if (len%3 != 0){
