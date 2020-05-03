@@ -48,7 +48,7 @@ int login(){
                 break;
             }
          }
-         chosseoption();
+         chosseoption(user);
 }
 void signup(){
         FILE *signData = fopen("Signup.txt", "a");
@@ -118,17 +118,29 @@ int checkpunct(char user[20]){
     }
     return n;
 }
-void chosseoption(){
-    printf("test");
+void chosseoption(char user[]){
+    printf("1. Matrix \n2. Charactor circle");
     int n;
     scanf("%d", &n);
     if (n == 1){
-        findcode();
+        chosseMatrix(user);
     }
     else if (n == 2){
-        encrypt();
+        startcharactorcircle();
     }
     else if (n == 3){
         main();
+    }
+}
+
+void chosseMatrix(char user[]){
+    int n;
+    printf("1 encrypt 2. decode \ns");
+    scanf("%d", &n);
+    if (n == 1){
+        encrypt(user);
+    }
+    else if(n == 2){
+        findcode();
     }
 }

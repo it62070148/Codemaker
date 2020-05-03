@@ -15,7 +15,7 @@ int startcharactorcircle(void) {
   condition = input_condition(); 
   num_rotate = input_num_rotate();
   printf("Input Text : ");
-  scanf("\n%[^\n]", code); 
+  scanf("\n %[^\n]s", code); 
   int len = strlen(code);
 
   //If decode code cycle will rotate_back by let -(num_rotate)
@@ -69,7 +69,7 @@ char input_condition(){
   //Input condition D(Decode) or E(Encode) and check Error
   char condition;
   printf("Input 'D' for Decode _or_ 'E' for Encode : ");
-  scanf("%c", &condition);
+  scanf(" %c", &condition);
   condition = toupper(condition);
   if(condition == 'D' || condition == 'E'){
     condition = condition;

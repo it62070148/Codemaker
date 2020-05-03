@@ -15,10 +15,13 @@ void intersignupbe();
 
 /* option */
 int checkpunct(char user[20]);
-void chosseoption();
+void chosseoption(char user[]);
 int checktaken(char user[20], char key[5]);
 int login();
 void signup();
+void chosseMatrix(char user[]);
+void chooseChacircle();
+
 /*---------------------------------------*/
 
 
@@ -34,7 +37,7 @@ void transpose(float [][3], float [][3], float, int [], int);
 
 /*Encrypt matrix charactor to matrix 1x3*/
 
-void encrypt();
+void encrypt(char user[]);
 /*------------*/
 
 /* charactor circle */

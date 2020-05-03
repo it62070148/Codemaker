@@ -2,9 +2,24 @@
 
 
 void findcode(){
+  FILE *last = fopen("history.txt", "r");
+  char data[20];
+  int ind = 0, po = 0, count = 0;
+  while ((fgets(data, 20, last)) != NULL)
+    {
+        printf("Test\n");
+        if (strcmp(data, "!")){
+          break;
+        }
+        else{
+          printf("%s ", data);
+        }
+    }
+    fclose(last);
+    ind = 0;
   float a[3][3], d, k = 3;
   char code[100], c, word[100];
-  int i, j, sum = 0, ind = 0, massint[100], l = 0, inverse[3][3];
+  int i, j, sum = 0, massint[100], l = 0, inverse[3][3];
   printf("Please input matrixcode\n");
   scanf(" %[^\n]s", code);
   strcat(code, " ");
