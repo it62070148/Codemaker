@@ -4,13 +4,18 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+struct data{
+    char username[20];
+    char pass[20];
+}dat[30], last[30];
 /* intefade app */
 void home();
 void intersignup();
 void intermatrix();
 void interdecode();
 void intersignupbe();
-
+void interchossetype();
+void interdecoder();
 /*-----------------------------------*/
 
 /* option */

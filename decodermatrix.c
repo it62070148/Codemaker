@@ -5,10 +5,11 @@ void findcode(){
   float a[3][3], d, k = 3;
   char code[100], c, word[100];
   int i,ind = 0, j, sum = 0, massint[100], l = 0, inverse[3][3];
-  printf("Please input matrixcode\n");
+  interdecoder();
+  printf("Please input matrixcode : ");
   scanf(" %[^\n]s", code);
   strcat(code, " ");
-  printf("Enter the elements of %.0fX%.0f Matrix : \n", k, k);
+  printf("\nEnter the elements of %.0fX%.0f Matrix : ", k, k);
   for (i = 0;i < k; i++){
      for (j = 0;j < k; j++){
         scanf("%f", &a[i][j]);

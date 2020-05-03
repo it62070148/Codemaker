@@ -35,7 +35,7 @@ int main()
     fclose(userDa);
 }
 int login(){
-            home();
+        interlogin();
         while(1){
             printf("Username: ");
             scanf("%s", user);
@@ -120,7 +120,7 @@ int checkpunct(char user[20]){
     return n;
 }
 void chosseoption(char user[]){
-    printf("1. Matrix \n2. Charactor circle");
+    interchossetype();
     int n;
     scanf("%d", &n);
     if (n == 1){

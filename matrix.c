@@ -7,7 +7,7 @@ void encrypt(char user[]){
   , len;
   printf("Please input massage : ");
   scanf(" %[^\n]s\n", massage);
-  printf("input code : ");
+  printf("input matrix to encrypt : ");
   len = strlen(massage);
   if (len%3 != 0){
     for(int i = 1;i<=len%3;i++){
