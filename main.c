@@ -2,7 +2,7 @@
 
 char user[20];
 char pass[20];
-
+char massage[100];
 struct data{
     char username[20];
     char pass[20];
@@ -17,15 +17,15 @@ int main()
     {
         
          if(choice == 1){
-             intersignup();
+            //  intersignup();
              login();
          }
         else if(choice == 2)
         {
-               intersignup();
+            //    void intersignupbe();
                signup();
         }
-        else{
+        else if(choice == 3){
             printf("Programs is closing");
         }
     
@@ -38,7 +38,7 @@ int main()
     fclose(userDa);
 }
 int login(){
-
+            home();
         while(1){
             printf("Username: ");
             scanf("%s", user);
@@ -52,6 +52,7 @@ int login(){
 }
 void signup(){
         FILE *signData = fopen("Signup.txt", "a");
+        intersignupbe();
         while(1){
         printf("Input Username: \n");
         scanf("%s", user);
@@ -64,6 +65,7 @@ void signup(){
         fprintf(signData, "%s\n", user);
         fprintf(signData, "%s\n", pass);
         fclose(signData);
+        intersignup();
         login();
 }
 int checktaken(char user[20], char key[5]){
@@ -117,12 +119,11 @@ int checkpunct(char user[20]){
     return n;
 }
 void chosseoption(){
-    printf("please input option\n");
-    printf("1 Encrypt\n2 decode\n3 main menu\n");
+    printf("test");
     int n;
     scanf("%d", &n);
     if (n == 1){
-        
+        findcode();
     }
     else if (n == 2){
         encrypt();

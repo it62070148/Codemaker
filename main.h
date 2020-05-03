@@ -9,6 +9,7 @@ void home();
 void intersignup();
 void intermatrix();
 void interdecode();
+void intersignupbe();
 
 /*-----------------------------------*/
 
