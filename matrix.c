@@ -1,14 +1,11 @@
-#include "stdio.h"
-#include "string.h"
-#include "math.h"
-#include "ctype.h"
-int encrypt();
-int encrypt(){
+#include "main.h"
+
+void encrypt(){
   char massage[100], cha;
   int c, matrix[3][3], count = 0, ind = 0, code[3][3]
   , len;
   printf("Please input massage\n");
-  scanf("%[^\n]", massage);
+  scanf("%[^\n]s", massage);
   printf("input code\n");
   len = strlen(massage);
   if (len%3 != 0){

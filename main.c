@@ -1,7 +1,5 @@
-#include "stdio.h"
-#include "string.h"
-#include "ctype.h"/**/
 #include "main.h"
+
 char user[20];
 char pass[20];
 
@@ -9,11 +7,6 @@ struct data{
     char username[20];
     char pass[20];
 }dat[30];
-int checkpunct(char user[20]);
-void chosseoption();
-int checktaken(char user[20], char key[5]);
-int login();
-void signup();
 int main()
 {
     FILE *userDa = fopen("Signup.txt", "r");
@@ -127,10 +120,10 @@ void chosseoption(){
     int n;
     scanf("%d", &n);
     if (n == 1){
-        int finddecode();
+        
     }
     else if (n == 2){
-        int encrypt();
+        encrypt();
     }
     else if (n == 3){
         main();
