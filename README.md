@@ -4,6 +4,5 @@
 <<<<<<< HEAD
 # Installation
 #### ขั้นตอนนะครับของให้คุณผู้ใช้นั้นกดปุ่ม 
-
-![Image](picture/clonetest.png)
+# ![Image](picture/clonetest.png)
 
