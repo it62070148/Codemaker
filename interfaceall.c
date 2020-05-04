@@ -9,7 +9,7 @@ void home() {
   for (i = 1; i < 96; i++ ){
     printf("*");
   }
-  printf("\n");
+  printf("\n\n");
 
 }
 
