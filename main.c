@@ -136,7 +136,7 @@ void chosseoption(char user[]){
 
 void chosseMatrix(char user[]){
     int n;
-    printf("1 encrypt 2. decode \ns");
+    interchossedeoren();
     scanf("%d", &n);
     if (n == 1){
         encrypt(user);

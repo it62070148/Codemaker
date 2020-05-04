@@ -9,6 +9,7 @@ void findcode(){
   printf("Please input matrixcode : ");
   scanf(" %[^\n]s", code);
   strcat(code, " ");
+  interdecoder();
   printf("\nEnter the elements of %.0fX%.0f Matrix : ", k, k);
   for (i = 0;i < k; i++){
      for (j = 0;j < k; j++){

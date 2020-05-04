@@ -3,6 +3,7 @@
 
 int startcharactorcircle(void) {
   //Transcode By Code_cycle
+  characterin();
   char code_cycle[27] = {'a', 'b', 'c', 'd', 'e',
                          'f', 'g', 'h', 'i', 'j',
                          'k', 'l', 'm', 'n', 'o',
@@ -15,7 +16,7 @@ int startcharactorcircle(void) {
   condition = input_condition(); 
   num_rotate = input_num_rotate();
   printf("Input Text : ");
-  scanf("\n %[^\n]s", code); 
+  scanf(" %[^\n]s", code); 
   int len = strlen(code);
 
   //If decode code cycle will rotate_back by let -(num_rotate)
@@ -68,6 +69,7 @@ char transcoded_index(int index, char cycle[], int num_rotate){
 char input_condition(){
   //Input condition D(Decode) or E(Encode) and check Error
   char condition;
+  characterin();
   printf("Input 'D' for Decode _or_ 'E' for Encode : ");
   scanf(" %c", &condition);
   condition = toupper(condition);
@@ -83,6 +85,7 @@ char input_condition(){
 int input_num_rotate(){
   //Input num for rotate code_cycle and check Error
   char num_rotate[999];
+  characterin();
   printf("Input Integer Number for rotation of codecycle : ");
   scanf("%s", num_rotate);
   if(is_num(num_rotate) == 0){

@@ -16,6 +16,9 @@ void interdecode();
 void intersignupbe();
 void interchossetype();
 void interdecoder();
+void interlogin();
+void characterin();
+void interchossedeoren();
 /*-----------------------------------*/
 
 /* option */

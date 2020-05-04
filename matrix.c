@@ -5,6 +5,7 @@ void encrypt(char user[]){
   char massage[100], cha;
   int c, matrix[3][3], count = 0, ind = 0, code[3][3]
   , len;
+  intermatrix();
   printf("Please input massage : ");
   scanf(" %[^\n]s\n", massage);
   printf("input matrix to encrypt : ");
