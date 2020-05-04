@@ -3,7 +3,7 @@
 
 <<<<<<< HEAD
 # Installation
-#### ขั้นตอนนะครับของให้คุณผู้ใช้นั้นกดปุ่ม ![Image](picture/clone.png)
+#### ขั้นตอนนะครับของให้คุณผู้ใช้นั้นกดปุ่ม ![Image](picture/clonetest.png)
 =======
 #Installation
 #### ขั้นตอนนะครับของให้คุณผู้ใช้นั้น 
