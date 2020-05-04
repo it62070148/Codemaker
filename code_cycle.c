@@ -1,9 +1,10 @@
 #include "main.h"
 
 
-int startcharactorcircle(void) {
+int startcharactorcircle() {
   //Transcode By Code_cycle
-  characterin();
+  char txt[100];
+  characterin(txt);
   char code_cycle[27] = {'a', 'b', 'c', 'd', 'e',
                          'f', 'g', 'h', 'i', 'j',
                          'k', 'l', 'm', 'n', 'o',
@@ -11,12 +12,15 @@ int startcharactorcircle(void) {
                          'u', 'v', 'w', 'x', 'y',
                          'z'};
   char code[999], transcoded[999];
-  int num_rotate;
-  char condition;
+  int num_rotate, u;
+  char condition, user[100];
   condition = input_condition(); 
   num_rotate = input_num_rotate();
   printf("Input Text : ");
-  scanf(" %[^\n]s", code); 
+  scanf(" %[^\n]s", code);
+  if(strcmp(code, "3") == 0){
+    chosseoption(txt);
+  }
   int len = strlen(code);
 
   //If decode code cycle will rotate_back by let -(num_rotate)
@@ -37,13 +41,13 @@ int startcharactorcircle(void) {
   }
   
   //Out put
-  if(condition == 'D')
-    printf("Decoded >>>> ");
-  else if(condition == 'E')
-    printf("Encoded >>>> ");
-  for(int i=0 ; i<len ; i++)
-    printf("%c", transcoded[i]);
- 
+  for(int i=0 ; i<len ; i++){
+    txt[i] = transcoded[i];}
+    characterin(txt);
+  printf("\n1. You will close program\n2. back to manu\n");
+  scanf("%d", &u);
+  if (u == 2){
+    chosseoption(user);} 
   return 0;
 }
  
@@ -69,9 +73,13 @@ char transcoded_index(int index, char cycle[], int num_rotate){
 char input_condition(){
   //Input condition D(Decode) or E(Encode) and check Error
   char condition;
-  characterin();
+  char txt[100] = "";
+  characterin(txt);
   printf("Input 'D' for Decode _or_ 'E' for Encode : ");
   scanf(" %c", &condition);
+  if(condition == '3'){
+    chosseoption(txt);
+  }
   condition = toupper(condition);
   if(condition == 'D' || condition == 'E'){
     condition = condition;
@@ -84,10 +92,14 @@ char input_condition(){
 
 int input_num_rotate(){
   //Input num for rotate code_cycle and check Error
+  char txt[100];
   char num_rotate[999];
-  characterin();
+  characterin(txt);
   printf("Input Integer Number for rotation of codecycle : ");
   scanf("%s", num_rotate);
+  if(strcmp(num_rotate, "3") == 0){
+    chosseoption(txt);
+  }
   if(is_num(num_rotate) == 0){
     printf("ERROR : Input Only Interger Number\n");
     sprintf(num_rotate, "%d", input_num_rotate());

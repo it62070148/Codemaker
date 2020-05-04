@@ -11,13 +11,13 @@ struct data{
 /* intefade app */
 void home();
 void intersignup();
-void intermatrix();
-void interdecode();
+void intermatrix(char []);
+void interdecode(char txt[]);
 void intersignupbe();
 void interchossetype();
 void interdecoder();
 void interlogin();
-void characterin();
+void characterin(char txt[]);
 void interchossedeoren();
 /*-----------------------------------*/
 

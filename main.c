@@ -41,6 +41,9 @@ int login(){
             scanf("%s", user);
             printf("Password: ");
             scanf("%s", pass);
+            if (strcmp(user, "3") == 0){
+                main();
+            }
             if(checktaken(user, "user") == 0 && checktaken(pass, "pass") == 0){
                 break;
             }
@@ -51,10 +54,13 @@ int login(){
 }
 void signup(){
         FILE *signData = fopen("Signup.txt", "a");
-        intersignupbe();
+        intersignup();
         while(1){
         printf("Input Username: \n");
         scanf("%s", user);
+        if (strcmp(user, "3") == 0){
+                main();
+            }
         if (checktaken(user, "user") != 0 && checkpunct(user) != 0){
             break;
         }

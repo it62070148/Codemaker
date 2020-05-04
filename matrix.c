@@ -1,13 +1,15 @@
 #include "main.h"
 
 void encrypt(char user[]){
+  char txt[100];
   FILE *userDa = fopen("History.txt", "a");
   char massage[100], cha;
   int c, matrix[3][3], count = 0, ind = 0, code[3][3]
   , len;
-  intermatrix();
+  intermatrix(txt);
   printf("Please input massage : ");
   scanf(" %[^\n]s\n", massage);
+  intermatrix(txt);
   printf("input matrix to encrypt : ");
   len = strlen(massage);
   if (len%3 != 0){
@@ -42,6 +44,7 @@ void encrypt(char user[]){
      }
   }
   fprintf(userDa, "%s\n", user);
+  intermatrix(txt);
   for(int i =0; i<a;i++){
       fprintf(userDa, "%d ", ans[i]);
       printf("%d ", ans[i]);
@@ -49,7 +52,7 @@ void encrypt(char user[]){
     fprintf(userDa, "\n");
   fclose(userDa);
   int u;
-  printf("1. You will close program\n2. back to manu\n");
+  printf("\n1. You will close program\n2. back to manu\n");
   scanf("%d", &u);
   if (u == 2){
     chosseoption(user);} 

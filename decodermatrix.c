@@ -2,14 +2,15 @@
 
 
 void findcode(){
+  char txt[100];
   float a[3][3], d, k = 3;
   char code[100], c, word[100];
   int i,ind = 0, j, sum = 0, massint[100], l = 0, inverse[3][3];
-  interdecoder();
+  interdecoder(txt);
   printf("Please input matrixcode : ");
   scanf(" %[^\n]s", code);
   strcat(code, " ");
-  interdecoder();
+  interdecoder(txt);
   printf("\nEnter the elements of %.0fX%.0f Matrix : ", k, k);
   for (i = 0;i < k; i++){
      for (j = 0;j < k; j++){
@@ -110,6 +111,7 @@ void cofactor(float num[3][3], float f, int massint[100], int l){
 /*Finding transpose of matrix*/ 
 void transpose(float num[3][3], float fac[3][3], float r, int massint[100], int l){
   int i, j, k, skip = 0, a = 0, c;
+  char txt[100];
   float b[3][3], inverse[3][3], d, sum = 0, ans[100];
   for (i = 0;i < r; i++){
      for (j = 0;j < r; j++){
@@ -137,11 +139,12 @@ void transpose(float num[3][3], float fac[3][3], float r, int massint[100], int 
   } 
   for(i = 0;i< a;++i){
     c = round(ans[i]);
-    printf("%c", c);
+    txt[i] = c;
   }
+  interdecoder(txt);
   char user[20];
   int u;
-  printf("1. You will close program\n2. back to manu\n");
+  printf("\n1. You will close program\n2. back to manu\n");
   scanf("%d", &u);
   if (u == 2){
     chosseoption(user);} 
