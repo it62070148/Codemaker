@@ -18,8 +18,8 @@
 #### Username: admin
 #### Password: 1234
 
-![Image](picture/filecode.jpg)
+![Image](picture/home.jpg)
 
 #### หากท่านผู้ใช้ login แล้วจะมีหน้าแล้วจะมีให้เลือกนะครับว่าคุณผู้ใช้จะทำการเข้ารหัสหรือถอดรหัสรูปแบบใดครับซึ่งโปรแกรมของพวกเรามี 2 รูปแบบให้เลือกนะครับ คือ matrix กับ charactor circle ครับ
 
-![Image](picture/mauoftype.jpg)
+![Image](picture/manuoftype.jpg)
