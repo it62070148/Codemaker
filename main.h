@@ -16,7 +16,7 @@ void interdecode(char txt[]);
 void intersignupbe();
 void interchossetype();
 void interdecoder();
-void interlogin();
+void interlogin(char user[]);
 void characterin(char txt[]);
 void interchossedeoren();
 /*-----------------------------------*/

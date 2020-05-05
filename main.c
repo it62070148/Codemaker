@@ -35,10 +35,11 @@ int main()
     fclose(userDa);
 }
 int login(){
-        interlogin();
+        interlogin(user);
         while(1){
             printf("Username: ");
             scanf("%s", user);
+            interlogin(user);
             printf("Password: ");
             scanf("%s", pass);
             if (strcmp(user, "3") == 0){
