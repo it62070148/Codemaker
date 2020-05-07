@@ -63,7 +63,7 @@
 * output จะเป็นข้อความที่ถูกถอดรหัสครับ
     * I love IT KMITL.
 #### 
-![Image](picture/matrixen.jpg)
+![Image](picture/matrixde.jpg)
 
 ### Character circle
 #### ในส่วนของcharactor circle ครับจะเป็นการเข้ารหัสและถอดรหัสแบบวงตัวอักษรครับ
