@@ -49,11 +49,11 @@ void encrypt(char user[]){
       fprintf(userDa, "%d ", ans[i]);
       printf("%d ", ans[i]);
     }
+    
     fprintf(userDa, "\n");
   fclose(userDa);
   int u;
-  printf("\n1. You will close program\n2. back to manu\n");
   scanf("%d", &u);
-  if (u == 2){
+  if (u == 3){
     chosseoption(user);} 
 }

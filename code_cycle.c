@@ -3,7 +3,7 @@
 
 int startcharactorcircle() {
   //Transcode By Code_cycle
-  char txt[100];
+  char txt[100] = "";
   characterin(txt);
   char code_cycle[27] = {'a', 'b', 'c', 'd', 'e',
                          'f', 'g', 'h', 'i', 'j',
@@ -16,6 +16,7 @@ int startcharactorcircle() {
   char condition, user[100];
   condition = input_condition(); 
   num_rotate = input_num_rotate();
+  characterin(txt);
   printf("Input Text : ");
   scanf(" %[^\n]s", code);
   if(strcmp(code, "3") == 0){
@@ -44,9 +45,8 @@ int startcharactorcircle() {
   for(int i=0 ; i<len ; i++){
     txt[i] = transcoded[i];}
     characterin(txt);
-  printf("\n1. You will close program\n2. back to manu\n");
   scanf("%d", &u);
-  if (u == 2){
+  if (u == 3){
     chosseoption(user);} 
   return 0;
 }

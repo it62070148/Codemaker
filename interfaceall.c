@@ -113,6 +113,9 @@ void interlogin(char txt[100]) {
    n = strlen(txt);
   left = (93-n)/2;
   right = (93-n)/2;
+  if (strcmp(txt, "_________________") == 0){
+    right -= 6;
+  }
   if(n%2 == 0){
     left = (93-n)/2+1;
   }

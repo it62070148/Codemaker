@@ -35,14 +35,17 @@ int main()
     fclose(userDa);
 }
 int login(){
-        interlogin(user);
+        interlogin("_________________");
         while(1){
             printf("Username: ");
             scanf("%s", user);
             interlogin(user);
+            if (strcmp(user, "3") == 0){
+                main();
+            }
             printf("Password: ");
             scanf("%s", pass);
-            if (strcmp(user, "3") == 0){
+            if (strcmp(pass, "3") == 0){
                 main();
             }
             if(checktaken(user, "user") == 0 && checktaken(pass, "pass") == 0){
@@ -70,6 +73,9 @@ void signup(){
         }
         printf("Input password: \n");
         scanf("%s", pass);
+        if (strcmp(pass, "3") == 0){
+                main();
+            }
         fprintf(signData, "%s\n", user);
         fprintf(signData, "%s\n", pass);
         fclose(signData);
@@ -143,6 +149,7 @@ void chosseoption(char user[]){
 
 void chosseMatrix(char user[]){
     int n;
+    char ttt[100];
     interchossedeoren();
     scanf("%d", &n);
     if (n == 1){
@@ -150,5 +157,8 @@ void chosseMatrix(char user[]){
     }
     else if(n == 2){
         findcode();
+    }
+    else if(n == 3){
+        chosseoption(ttt);
     }
 }

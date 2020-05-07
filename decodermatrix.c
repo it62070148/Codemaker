@@ -144,9 +144,8 @@ void transpose(float num[3][3], float fac[3][3], float r, int massint[100], int 
   interdecoder(txt);
   char user[20];
   int u;
-  printf("\n1. You will close program\n2. back to manu\n");
   scanf("%d", &u);
-  if (u == 2){
+  if (u == 3){
     chosseoption(user);} 
 }
 int transintmirror(char c, int ind){
