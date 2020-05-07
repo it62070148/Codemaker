@@ -95,7 +95,7 @@
 
 ชื่อ  | รหัสนักศึกษา  |  Github | Col4
 ----- | ----- | ----- | ----- |
-นายชญานนท์ สิริลัภนานนท์ | 62070038 | ![Github](https://github.com/Sixfeetit?fbclid=IwAR1EeYrZjE8cyeQNrwmhUo9cG-wmEBGGwQ_y6OHsjtgmil84-yieQcoL0DI) |
-นายณัฐวุฒิ สุขไชยพร | 62070068 | Test2 | 
-นายทวีศักดิ์ จันทร์อำพล | 62070073 | Test3 | 
-นายภาณุพงศ์ ทองใบน้อย | 62070148 | Test3 | 
+นายชญานนท์ สิริลัภนานนท์ | 62070038 | [Github](https://github.com/Sixfeetit?fbclid=IwAR1EeYrZjE8cyeQNrwmhUo9cG-wmEBGGwQ_y6OHsjtgmil84-yieQcoL0DI) |
+นายณัฐวุฒิ สุขไชยพร | 62070068 | [Github](https://github.com/it62070068?fbclid=IwAR0cDpjqSk4weSprqBOHQouMYYPrtmaX7AbXKtUx3DO0tfWEtYRAHD3G_7g) | 
+นายทวีศักดิ์ จันทร์อำพล | 62070073 | [Github](https://github.com/it62070073?fbclid=IwAR3x8pxCHuIFJ1NN_QTvqYMR7OeSxr9RYCYoIcsyVlG5bGnTUYfZzLtXp70)  | 
+นายภาณุพงศ์ ทองใบน้อย | 62070148 | [Github](https://github.com/it62070148) | 
