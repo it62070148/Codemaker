@@ -104,4 +104,4 @@
 #### ขอขอบคุณอาจารย์ทั้ง 2 ท่านที่ได้ในแนวทางการสร้างโครงงาน และได้ในคำแนะนำในเรื่องการเขียน source code ภาษา C นี้ขึ้น
     ผศ. ดร. กิติ์สุชาต พสุภา  | ผศ. ดร. ปานวิทย์ ธุวะนุติ  
 ----- | ----- |
-![Image](https://scontent.fbkk2-8.fna.fbcdn.net/v/t1.0-9/p960x960/45565676_10156055460602532_1669832762984497152_o.jpg?_nc_cat=100&_nc_sid=7aed08&_nc_oc=AQktKuYFeOEe0_cPoDTrdfjP1m3BY9d6bYtB6KKHJSt1ARDN4Z4ogBWnfGZAeb-e8WM&_nc_ht=scontent.fbkk2-8.fna&_nc_tp=6&oh=0aabc60d59b26cd65ff9cddd2a4fc674&oe=5EDAD271)|![Image](https://scontent.fbkk2-3.fna.fbcdn.net/v/t31.0-1/14902950_10153805956002331_6002362915012083123_o.jpg?_nc_cat=111&_nc_sid=dbb9e7&_nc_oc=AQkEM6Xj3fY7qXxs4PcCByem9IjZ0Ll8DdndtQyjV-e4wcW1OxL_LB3d_xCOhPHgFEw&_nc_ht=scontent.fbkk2-3.fna&oh=27e384b856fbecb43ba1d5367fac020a&oe=5EDA1EF8)
+![Image](picture/Aj_kit.jpg)|![Image](picture/Aj_Panwit.jpg)
