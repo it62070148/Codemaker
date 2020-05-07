@@ -99,3 +99,9 @@
 นายณัฐวุฒิ สุขไชยพร | 62070068 | [Github](https://github.com/it62070068?fbclid=IwAR0cDpjqSk4weSprqBOHQouMYYPrtmaX7AbXKtUx3DO0tfWEtYRAHD3G_7g) | [facebook](https://www.facebook.com/oom.nutthavut) |62070068@kmitl.ac.th
 นายทวีศักดิ์ จันทร์อำพล | 62070073 | [Github](https://github.com/it62070073?fbclid=IwAR3x8pxCHuIFJ1NN_QTvqYMR7OeSxr9RYCYoIcsyVlG5bGnTUYfZzLtXp70)  | [facebook](https://www.facebook.com/wentwpn) | 62070073@kmitl.ac.th
 นายภาณุพงศ์ ทองใบน้อย | 62070148 | [Github](https://github.com/it62070148) | [facebook](https://www.facebook.com/profile.php?id=100008257810779) | 62070148@kmitl.ac.th
+
+# Supporter
+#### ขอขอบคุณอาจารย์ทั้ง 2 ท่านที่ได้ในแนวทางการสร้างโครงงาน และได้ในคำแนะนำในเรื่องการเขียน source code ภาษา C นี้ขึ้น
+    ผศ. ดร. กิติ์สุชาต พสุภา  | ผศ. ดร. ปานวิทย์ ธุวะนุติ  
+    ----- | ----- |
+    ![Image](https://scontent.fbkk2-8.fna.fbcdn.net/v/t1.0-9/p960x960/45565676_10156055460602532_1669832762984497152_o.jpg?_nc_cat=100&_nc_sid=7aed08&_nc_oc=AQktKuYFeOEe0_cPoDTrdfjP1m3BY9d6bYtB6KKHJSt1ARDN4Z4ogBWnfGZAeb-e8WM&_nc_ht=scontent.fbkk2-8.fna&_nc_tp=6&oh=0aabc60d59b26cd65ff9cddd2a4fc674&oe=5EDAD271)|![Image](https://scontent.fbkk2-3.fna.fbcdn.net/v/t31.0-1/14902950_10153805956002331_6002362915012083123_o.jpg?_nc_cat=111&_nc_sid=dbb9e7&_nc_oc=AQkEM6Xj3fY7qXxs4PcCByem9IjZ0Ll8DdndtQyjV-e4wcW1OxL_LB3d_xCOhPHgFEw&_nc_ht=scontent.fbkk2-3.fna&oh=27e384b856fbecb43ba1d5367fac020a&oe=5EDA1EF8)
