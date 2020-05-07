@@ -93,8 +93,9 @@
 
 # Member
 
-Col1  | Col2  |  Col3 | Col4
+ชื่อ  | รหัสนักศึกษา  |  Github | Col4
 ----- | ----- | ----- | ----- |
-Test1 | Test1 | Test1 | Test1 |
-Test2 | Test2 | Test2 | Test2 |
-Test3 | Test3 | Test3 | Test3 |
+นายชญานนท์ สิริลัภนานนท์ | 62070038 | ![Github](https://github.com/Sixfeetit?fbclid=IwAR1EeYrZjE8cyeQNrwmhUo9cG-wmEBGGwQ_y6OHsjtgmil84-yieQcoL0DI) |
+นายณัฐวุฒิ สุขไชยพร | 62070068 | Test2 | 
+นายทวีศักดิ์ จันทร์อำพล | 62070073 | Test3 | 
+นายภาณุพงศ์ ทองใบน้อย | 62070148 | Test3 | 
