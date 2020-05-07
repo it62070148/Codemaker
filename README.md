@@ -93,9 +93,9 @@
 
 # Member
 
-ชื่อ  | รหัสนักศึกษา  |  Github | Col4
------ | ----- | ----- | ----- |
-นายชญานนท์ สิริลัภนานนท์ | 62070038 | [Github](https://github.com/Sixfeetit?fbclid=IwAR1EeYrZjE8cyeQNrwmhUo9cG-wmEBGGwQ_y6OHsjtgmil84-yieQcoL0DI) |
-นายณัฐวุฒิ สุขไชยพร | 62070068 | [Github](https://github.com/it62070068?fbclid=IwAR0cDpjqSk4weSprqBOHQouMYYPrtmaX7AbXKtUx3DO0tfWEtYRAHD3G_7g) | 
-นายทวีศักดิ์ จันทร์อำพล | 62070073 | [Github](https://github.com/it62070073?fbclid=IwAR3x8pxCHuIFJ1NN_QTvqYMR7OeSxr9RYCYoIcsyVlG5bGnTUYfZzLtXp70)  | 
-นายภาณุพงศ์ ทองใบน้อย | 62070148 | [Github](https://github.com/it62070148) | 
+ชื่อ  | รหัสนักศึกษา  |  Github | facebook | E-mail
+----- | ----- | ----- | ----- | ----- | ----- |
+นายชญานนท์ สิริลัภนานนท์ | 62070038 | [Github](https://github.com/Sixfeetit?fbclid=IwAR1EeYrZjE8cyeQNrwmhUo9cG-wmEBGGwQ_y6OHsjtgmil84-yieQcoL0DI) | [facebook](https://www.facebook.com/chayanonsirilupnanon) |
+นายณัฐวุฒิ สุขไชยพร | 62070068 | [Github](https://github.com/it62070068?fbclid=IwAR0cDpjqSk4weSprqBOHQouMYYPrtmaX7AbXKtUx3DO0tfWEtYRAHD3G_7g) | [facebook](https://www.facebook.com/oom.nutthavut) |
+นายทวีศักดิ์ จันทร์อำพล | 62070073 | [Github](https://github.com/it62070073?fbclid=IwAR3x8pxCHuIFJ1NN_QTvqYMR7OeSxr9RYCYoIcsyVlG5bGnTUYfZzLtXp70)  | [facebook](https://www.facebook.com/wentwpn) |
+นายภาณุพงศ์ ทองใบน้อย | 62070148 | [Github](https://github.com/it62070148) | [facebook](https://www.facebook.com/profile.php?id=100008257810779) |
