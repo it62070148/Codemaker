@@ -1,6 +1,6 @@
 #include "main.h"
 
-
+/*find massage */
 void findcode(){
   char txt[100];
   float a[3][3], d, k = 3;
@@ -12,12 +12,14 @@ void findcode(){
   strcat(code, " ");
   interdecoder(txt);
   printf("\nEnter the elements of %.0fX%.0f Matrix : ", k, k);
+  /*Input matrix of 3x3 ,that to encrypt massage*/
   for (i = 0;i < k; i++){
      for (j = 0;j < k; j++){
         scanf("%f", &a[i][j]);
         }
     }
   // printf("%ld\n", strlen(code));
+  /*tranform string to int */
   for (i = 0;i < strlen(code);i++){
     c = code[i];
     if (c != ' '){
@@ -82,7 +84,7 @@ float determinant(float a[3][3], float k)
  
     return (det);
 }
- 
+ /*find cofactor*/
 void cofactor(float num[3][3], float f, int massint[100], int l){
  float b[3][3], fac[3][3];
  int p, q, m, n, i, j, inverse[3][3];
@@ -108,7 +110,7 @@ void cofactor(float num[3][3], float f, int massint[100], int l){
   }
   transpose(num, fac, f, massint, l);
 }
-/*Finding transpose of matrix*/ 
+/*Finding transpose of matrix to inverse matrix*/ 
 void transpose(float num[3][3], float fac[3][3], float r, int massint[100], int l){
   int i, j, k, skip = 0, a = 0, c;
   char txt[100];
@@ -148,12 +150,14 @@ void transpose(float num[3][3], float fac[3][3], float r, int massint[100], int 
   if (u == 3){
     chosseoption(user);} 
 }
+/*transform strings to int, but int is mirror such as 123 to 321*/
 int transintmirror(char c, int ind){
   int  n;
   n = c-48;
   n *= pow(10, ind);
   return n;
 }
+/*trans mirror to correct int 321 to 123*/
 int transint(int sum, int ind){
   int i, ans = 0, c = 0, a = 0;
   ind--;

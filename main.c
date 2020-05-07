@@ -1,5 +1,7 @@
 #include "main.h"
+/* Include library from main.h*/
 
+/* variable of all function*/
 char user[20];
 char pass[20];
 char massage[100];
@@ -34,6 +36,7 @@ int main()
     
     fclose(userDa);
 }
+/* You input 1 to fuction login*/
 int login(){
         interlogin("_________________");
         while(1){
@@ -48,6 +51,7 @@ int login(){
             if (strcmp(pass, "3") == 0){
                 main();
             }
+            /*Check user and password on Sign up.txt*/
             if(checktaken(user, "user") == 0 && checktaken(pass, "pass") == 0){
                 break;
             }
@@ -56,6 +60,7 @@ int login(){
          }
          chosseoption(user);
 }
+/*Sign up Function use to save new account to Sign.txt*/
 void signup(){
         FILE *signData = fopen("Signup.txt", "a");
         intersignup();
@@ -65,6 +70,7 @@ void signup(){
         if (strcmp(user, "3") == 0){
                 main();
             }
+        /*check punct and taken user*/
         if (checktaken(user, "user") != 0 && checkpunct(user) != 0){
             break;
         }
@@ -76,17 +82,20 @@ void signup(){
         if (strcmp(pass, "3") == 0){
                 main();
             }
+        /*save account, that not already taken on Signup.txt or not punct*/
         fprintf(signData, "%s\n", user);
         fprintf(signData, "%s\n", pass);
         fclose(signData);
         intersignup();
         login();
 }
+/*Check taken of user and password function*/
 int checktaken(char user[20], char key[5]){
     FILE *gdata = fopen("Signup.txt", "r");
     int c, ind = 0, ansuser = 1, po = 2,  count=0;
     char data[20];
     char blank[20] = "";
+    /*Read data from Signup.txt*/
     while ((fgets(data, 20, gdata)) != NULL)
     {
         if (po%2 == 0){
@@ -100,6 +109,7 @@ int checktaken(char user[20], char key[5]){
         }
         count++;
     }
+    /*Check taken of user*/
     if (key == "user"){
     for(int i =0;i<= count;i++){
         ansuser = strcmp(user, dat[i].username)+10;
@@ -109,6 +119,7 @@ int checktaken(char user[20], char key[5]){
             }
         }
     }
+    /*check password is correct or not*/
     if(key == "pass"){
         for(int i =0;i<= count;i++){
         ansuser = strcmp(user, dat[i].pass)+10;
@@ -119,6 +130,7 @@ int checktaken(char user[20], char key[5]){
     }
     return ansuser;
 }
+/*check punct*/
 int checkpunct(char user[20]){
     char c;
     int n = 1;
@@ -132,6 +144,7 @@ int checkpunct(char user[20]){
     }
     return n;
 }
+/*function of feature matrix or character circle*/
 void chosseoption(char user[]){
     interchossetype();
     int n;
@@ -146,7 +159,7 @@ void chosseoption(char user[]){
         main();
     }
 }
-
+/*Function of choose Encrypt or Decode*/
 void chosseMatrix(char user[]){
     int n;
     char ttt[100];
