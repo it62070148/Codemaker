@@ -6,7 +6,7 @@
 [How to use](https://youtu.be/-korO6F6Ro4)
 
 ## **Poster**
-[poster](https://github.com/it62070148/Codemaker/blob/master/Poster_codemaker.pdf)
+[Poster](https://github.com/it62070148/Codemaker/blob/master/Poster_codemaker.pdf)
 
 
 # Installation
